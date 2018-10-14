@@ -1,0 +1,94 @@
+/* 满屏 */
+body
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+
+/* 下面主题部分样式 */
+.jd_category
+{
+    height: 100%;
+    padding-top: 45px;
+}
+.jd_category > .jd_category_left
+{
+    width: 90px;
+    height: 100%;
+    padding-top: 45px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+.jd_category > .jd_category_left::-webkit-scrollbar
+{
+    display: none;
+}
+.jd_category > .jd_category_left > ul > li
+{
+    text-align: center;
+}
+.jd_category > .jd_category_left > ul > li > a
+{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 5px;
+    background-color: #c0c0c0;
+}
+.jd_category > .jd_category_left > ul > li > a
+{
+    border-bottom: 1px solid #888;
+}
+.jd_category > .jd_category_left > ul > li:last-of-type > a
+{
+    border: none;
+}
+.jd_category > .jd_category_left > ul > li > a.now
+{
+    background-color: white;
+    color: red;
+}
+
+.jd_category > .jd_category_right
+{
+    height: 100%;
+    padding-left: 95px;
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+.jd_category > .jd_category_right::-webkit-scrollbar
+{
+    display: none;
+}
+.jd_banner
+{
+    margin-bottom: 15px;
+}
+.jd_banner > a > img
+{
+    width: 100%;
+    height: 100%;
+}
+.jd_category > .jd_category_right > .jd_category_list  h3
+{
+    margin-bottom: 5px;
+}
+
+.jd_category > .jd_category_right > .jd_category_list  li
+{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-top: 10px;
+}
+.jd_category > .jd_category_right > .jd_category_list img
+{
+    height: 62px;
+}

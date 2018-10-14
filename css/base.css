@@ -1,0 +1,174 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+
+}
+
+html
+{
+    background-color: #c0c0c0;
+}
+
+body
+{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;  /*sans-serif是手机上的一个默认字体*/
+    color: black;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+input,textarea
+{
+    border: none;
+    resize: none;
+    outline: none;
+
+    -webkit-appearance: none;  /*针对移动设备当中的输入框等的默认效果的清除*/
+}
+
+/* 清除浮动 */
+.clearfix::after
+{
+    content: " ";
+    display: block;
+    visibility: hidden;
+    /* height: 0; */
+    /* line-height: 0; */
+    clear: both;
+}
+
+.jd_layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+[class^="icon_"]
+{
+    background: url("../img/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+.floatRight
+{
+    float: right;
+}
+.floatLeft
+{
+    float: left;
+}
+.borderLeft
+{
+    border-left: 1px solid #888;
+}
+.borderBottom
+{
+    border-bottom: 1px solid #888;
+}
+.borderRight
+{
+    border-right: 1px solid #888;
+}
+
+
+
+/* 头部通栏样式 */
+.jd_category_top
+{
+    height: 45px;
+    width: 100%;
+    overflow: hidden;
+    background: url("../img/header-bg.png") repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #c0c0c0;
+    z-index: 2;
+
+    position: absolute;
+}
+.jd_category_top > .icon_back
+{
+    background-position: -20px 0;
+    width: 20px;
+    height: 20px;
+    margin: 12px 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.jd_category_top > form
+{
+    padding-left: 40px;
+    padding-right: 44px;
+    width: 100%;
+    line-height: 44px;
+}
+.jd_category_top > form > input[type='search']
+{
+    height: 32px;
+    border:1px solid #888;
+    border-radius: 5px;
+    padding: 0 5px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+.jd_category_top > form > input[type='search']:focus
+{
+    border:1px solid lightblue;
+}
+.jd_category_top > .icon_menu
+{
+    background-position: -59px 0;
+    width: 22px;
+    height: 20px;
+    margin: 12px 10px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 购物车页面check按钮样式 */
+.jd_shop_check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.jd_shop_check > .check
+{
+    display: block;
+    background: url("../img/shop-icon.png");
+    background-size: 50px 100px;
+    background-position: 0 0;
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+}
+.jd_shop_check > .check[checked]
+{
+    display: block;
+    background: url("../img/shop-icon.png");
+    background-size: 50px 100px;
+    background-position: -25px 0;
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+}

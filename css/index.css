@@ -1,0 +1,310 @@
+/* layout样式 */
+#jd_layout
+{
+    min-width: 300px;
+    max-width: 640px;
+    margin:0 auto;
+    position: relative;
+}
+
+
+/* 搜索头部 */
+#jd_header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+}
+/* 搜索头部的内容 */
+#jd_header > #jd_header_box
+{
+    min-width: 300px;
+    max-width: 640px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+#jd_header > #jd_header_box > .icon_logo
+{
+    background-position: 0 -103px;
+    width: 60px;
+    height: 36px;
+    /* display: block; */
+
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+#jd_header > #jd_header_box > form
+{
+    height: 40px;
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+}
+#jd_header > #jd_header_box > form > .icon_search
+{
+    background-position: -60px -109px;
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    top: 10px;
+    left: 85px;
+}
+#jd_header > #jd_header_box > form > input[type='search']
+{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 1px;
+}
+#jd_header > #jd_header_box > .login
+{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    /* display: block; */
+    text-align: center;
+    font-size: 15px;
+    color: white;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 轮播图 */
+#jd_banner
+{
+    overflow: hidden;
+    position: relative;
+}
+#jd_banner > ul:first-of-type
+{
+    width: 800%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#jd_banner > ul:first-of-type > li
+{
+    width: 12.5%;
+    float: left;
+}
+#jd_banner > ul:first-of-type > li > img
+{
+    display: block;
+    width: 100%;
+}
+
+/* 导航栏样式 */
+#jd_nav
+{
+    padding:20px 0;
+    background-color: white;
+    overflow: hidden;
+}
+#jd_nav > ul > li
+{
+    width: 25%;
+    float: left;
+    text-align: center;
+    margin: 5px 0;
+    height: 62px;
+    box-sizing: border-box;
+}
+#jd_nav > ul > li > a
+{
+    display: block;
+    color: #8d8c8c;
+}
+#jd_nav > ul > li > a:hover
+{
+    color: #c0c0c0;
+}
+#jd_nav > ul > li > a > img
+{
+    height: 40px;
+    width: 40px;
+}
+
+
+/* 商品区样式 */
+#jd_product
+{
+    /* font-size: 0;        用来预防幽灵节点             */
+}
+#jd_product > .jd_product_miaosha
+{
+    border-radius: 5px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top
+{
+    margin-top: 8px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px #c0c0c0;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > .icon_miaosha
+{
+    background:url("../img/seckill-icon.png") no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left:12px; 
+    /* display: inline-block; */
+    float: left;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > h3
+{
+    /* display: inline-block; */
+    float: left;
+    font-size: 14px;
+    margin-left:12px; 
+    color: #d8505c;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > .miaosha_time
+{
+    margin-left:12px; 
+    float: left;
+    line-height: 15px;
+    margin-top: 6px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > .miaosha_time > .num
+{
+    display: block;
+    background-color: black;
+    color: white;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 3px;
+    text-align: center;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > .miaosha_time > .dot
+{
+    margin-left: 3px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > a
+{
+    padding-right: 16px;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > a:hover
+{
+    color: red;
+    font-weight: bolder;
+}
+#jd_product > .jd_product_miaosha > .jd_product_miaosha_top > span
+{
+    font-size: 14px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main
+{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li
+{
+    width: 33.33%;
+    float: left;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li > a
+{
+    display: block;
+    text-align: center;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li > a >.imgBox
+{
+    width: 100%;
+    border-right: 1px solid #c0c0c0;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li:last-of-type > a >.imgBox:last-of-type
+{
+    border: none;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li > a > .imgBox > img
+{
+    width: 60%;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li > a > .newPrice
+{
+    color:#d8505c;
+    margin-top: 5px;
+}
+#jd_product > .jd_product_miaosha > .jd_product_box_miaosha_main > ul > li > a > .oldPrice
+{
+    color: #c0c0c0;
+    margin-top: 2px;
+    text-decoration: line-through;
+}
+
+
+#jd_product > .jd_product_box
+{
+    margin-top: 8px;
+    box-shadow: 0 0 1px 1px #c0c0c0;
+    background-color: white;
+    border-radius: 5px;
+}
+#jd_product > .jd_product_box > .jd_product_box_top
+{
+    border-bottom: 1px solid #c0c0c0;
+    line-height: 30px;
+    position: relative;
+}
+#jd_product > .jd_product_box > .jd_product_box_top > .jd_product_box_title
+{
+    padding-left: 16px;
+    color: #666;
+}
+#jd_product > .jd_product_box > .jd_product_box_top > .jd_product_box_title::before
+{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 12px;
+    background-color: red;
+
+    position: absolute;
+    top: 10px;
+    left: 8px;;
+}
+#jd_product > .jd_product_box > .jd_product_box_top > a
+{
+    padding-right: 16px;
+    font-style: italic;
+}
+#jd_product > .jd_product_box > .jd_product_box_top > a:hover
+{
+    color: red;
+    font-weight: bolder;
+}
+#jd_product > .jd_product_box > .jd_product_box_main > a
+{
+    width: 50%;
+}
+#jd_product > .jd_product_box > .jd_product_box_main > a > img
+{
+    width: 100%;
+    display: block;                 /*如果不设置为块级元素, 会有幽灵元素挤出白边*/
+}
+#jd_product > .jd_product_box:nth-of-type(3) > .jd_product_box_main > a 
+{
+    border-color: white;
+}
