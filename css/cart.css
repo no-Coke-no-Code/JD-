@@ -229,6 +229,7 @@
 .count > .jd_shop_check
 {
     line-height: 58px;
+    margin-left: 20px;
 }
 .count .check , .count .check[checked]
 {
