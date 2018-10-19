@@ -1,0 +1,92 @@
+html,body
+{
+    background-color: #fff;
+}
+.jd_category_top
+{
+    position: relative;
+}
+.jd_category_top > .title
+{
+    line-height: 44px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.middleForm
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.middleForm .clear
+{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    color: gray;
+    display: none;
+    width: 24px;
+    height: 24px;
+    background: url("../img/sprites.png") no-repeat;
+    background-size: 200px 200px;
+    background-position: -37px 1px;
+}
+.middleForm > form > .account,.middleForm > form >.password
+{
+    position: relative;
+}
+.middleForm input[type='text'],.middleForm input[type='password']
+{
+    background-color: transparent;
+    border-bottom: 2px solid gray;
+    padding:10px 0; 
+    font-size: 18px;
+    width: 100%;
+    margin-top: 40px;
+    padding-right: 50px;
+}
+.middleForm input[type='password']
+{
+    margin-bottom: 15px;
+}
+.middleForm .warnMessage
+{
+    position: absolute;
+    color: red;
+    font-size: 18px;
+}
+.middleForm button
+{
+    display: block;
+    background-color: #f15353;
+    width: 100%;
+    line-height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    outline: none;
+    margin-top: 70px;
+    text-indent: .6em;
+    letter-spacing: .6em;
+}
+
+.middleForm .otherWays
+{
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.middleForm .otherWays>a
+{
+    color: #666;
+    font-size: 16px;
+}
+.middleForm .otherWays>a:last-of-type
+{
+    float: right;
+}
+.middleForm .otherWays>a:hover
+{
+    cursor: pointer;
+}
