@@ -1,6 +1,6 @@
 html,body
 {
-    height: 100%;
+    /* height: 100%; */
 }
 .layout
 {
@@ -31,7 +31,8 @@ html,body
     height: 100%;
     width: 100%;
     margin-top: 44px;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
+    /* padding-bottom: 44px; */
     overflow: hidden;
 }
 .content .swiper-wrapper
@@ -123,6 +124,52 @@ html,body
 .content .describe>.Like>.icon_like
 {
     background-position: 0 -25px;
+}
+
+.content>.shop
+{
+    background-color: #f7f7f7;
+    margin: 20px 0;
+}
+.content>.shop>.shopTitle
+{
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+} 
+.content>.shop>.shopMessage
+{
+    margin: 10px 0;
+    display: flex;
+}
+.shopMessage>.shopFans,.shopMessage>.shopGoods
+{
+    flex: 1;
+    text-align: center;
+}
+.shopMessage>.shopFans
+{
+    border-right: 1px solid black;
+    /* margin-left: -10px; */
+}
+.content>.shop>.shopOption
+{
+    padding: 0 10px;
+    text-align: center;
+}
+.content>.shop>.shopOption>a:first-of-type
+{
+    float: left;
+}
+.content>.shop>.shopOption>a:nth-of-type(2)
+{
+    float: right;
+}
+.content>.shop>.shopOption button
+{
+    width: 180px;
+    height: 25px;
+    line-height: 25px;
 }
 
 .bottom
