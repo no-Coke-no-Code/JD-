@@ -1,6 +1,14 @@
 html,body
 {
+    height: 100%;
+}
+.layout
+{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
     background-color: #fff;
+    height: 100%;
 }
 .jd_category_top
 {

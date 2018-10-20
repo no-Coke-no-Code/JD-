@@ -1,22 +1,25 @@
 window.onload = function(){
-
-    gettingJdboxHeight();
-    hoverSmallIcon();
-    buquanBorder();
-    daoJiShi();
-    getBannerHeight();
+    var indexFunc = new index();
+    indexFunc.gettingJdboxHeight();
+    indexFunc.hoverSmallIcon();
+    indexFunc.buquanBorder();
+    indexFunc.daoJiShi();
+    indexFunc.getBannerHeight();
 
     window.addEventListener('scroll',function(){
-        gettingJdboxHeight();
+        indexFunc.gettingJdboxHeight();
     });
 
     window.addEventListener("resize",function(){
-        getBannerHeight();
+        indexFunc.getBannerHeight();
     });
+}
 
 
+function index(){};
+index.prototype = {
     //顶部通栏变色特效
-    function gettingJdboxHeight(){
+    gettingJdboxHeight:function(){
         var jd_header_box = document.getElementById('jd_header_box');
         var jd_header_box_height = window.getComputedStyle(jd_header_box).height.split('');
         jd_header_box_height.splice(-2,2);
@@ -29,11 +32,9 @@ window.onload = function(){
         {
             jd_header_box.style.backgroundColor = "transparent";
         }
-    };
-
-
+    },
     //hover小图标特效
-    function hoverSmallIcon(){
+    hoverSmallIcon:function(){
         var imgList = document.querySelectorAll("#jd_nav li");
         for(let x = 0;x<imgList.length;x++)
         {
@@ -46,18 +47,14 @@ window.onload = function(){
                 this.children[0].children[0].style.height = "40px";
             });
         }
-    };
-
-
+    },
     //补全图片border
-    function buquanBorder(){
+    buquanBorder:function(){
         var jd_product_box_main = document.getElementsByClassName("jd_product_box_main")[0];
         jd_product_box_main.children[0].children[0].style.height = window.getComputedStyle(jd_product_box_main).height;
-    };
-
-
+    },
     // 倒计时特效
-    function daoJiShi(){
+    daoJiShi:function(){
         var time = 0.5 * 60 *60;
         var num = document.getElementsByClassName("num");
         var timer = setInterval(function(){
@@ -80,11 +77,9 @@ window.onload = function(){
                 clearInterval(timer);
             }
         },1000);
-    };
-
-
-    // 获取banner高度
-    function getBannerHeight(){
+    },
+        // 获取banner高度
+        getBannerHeight:function(){
         var lastLoca = 0;
         var eachDistance = 0;
         var totalDistance = 0;
@@ -137,5 +132,5 @@ window.onload = function(){
                 ul.style.left = -totalDistance + "px";
             }
         })
-    };
+    },
 };
