@@ -1,7 +1,17 @@
+.layout
+{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+}
 .jd_category_top
 {
     top: 0;
     left: 0;
+    right: 0;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
 }
 .jd_category_top > h3
 {
@@ -225,6 +235,10 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    right: 0;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
 }
 .count > .jd_shop_check
 {

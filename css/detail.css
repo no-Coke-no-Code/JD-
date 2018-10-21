@@ -1,6 +1,7 @@
 html,body
 {
     /* height: 100%; */
+    /* width: 100%; */
 }
 .layout
 {
@@ -17,6 +18,9 @@ html,body
     top: 0;
     left: 0;
     right: 0;
+    min-width: 300px;
+    max-width: 640px;
+    margin:auto;
 }
 .jd_category_top > .title
 {
@@ -86,19 +90,24 @@ html,body
     word-break: break-all;
     word-wrap: break-word;
 }
-.content .describe>.describtion::after
+/* .content .describe>.describtion::after
 {
     content: "..";
     position: absolute;
     bottom: 10px;
     right: 3px;
-}
+} */
 .content .describe>.describtion>span
 {
     text-indent: 2em;
     overflow: hidden;
     display: inline-block;
     height: 42px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    /* 多行省略(貌似这招只有在chrome下才能生效) */
 }
 .content .describe>.collection
 {
@@ -160,14 +169,16 @@ html,body
 .content>.shop>.shopOption>a:first-of-type
 {
     float: left;
+    width: 50%;
 }
 .content>.shop>.shopOption>a:nth-of-type(2)
 {
     float: right;
+    width: 50%;
 }
 .content>.shop>.shopOption button
 {
-    width: 180px;
+    width: 80%;
     height: 25px;
     line-height: 25px;
 }
@@ -176,14 +187,15 @@ html,body
 {
     height: 44px;
     line-height: 44px;
-    background-color:yellow;
     position: fixed;
     bottom: 0;
     right: 0;
     left: 0;
     background: url("../img/header-bg.png") repeat-x;
     background-size: 1px 44px;
-
+    min-width: 300px;
+    max-width: 640px;
+    margin:auto;
     display: flex;
 }
 .bottom > .smallLink
